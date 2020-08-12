@@ -1,9 +1,52 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
-<h1>oi</h1>
-<ion-content>
+<div class="content" content>
+  <div class="background">
+    <div class="cape">
+      <div id="container">
+        <figure class="figure">
+          <img id="logo" src="assets/imgs/logo.png" alt="Logo">
+        </figure>
 
-</ion-content>
+        <ion-item id="email">
+          <ion-input type="email" name="email" required placeholder="Email"></ion-input>
+        </ion-item>
+
+        <hr class="divider">
+
+        <ion-item id="password">
+
+          <ion-input type="password" name="password" required placeholder="Senha"></ion-input>
+        </ion-item>
+        <hr class="divider">
+        <hr class="divider">
+        <ion-button expand="block" size="small" color="primary" [routerLink]="['/tabs']" routerDirection="forward">
+          Entrar
+        </ion-button>
+
+        <hr class="divider2">
+        <b class="btn" (click)="EsqueciSenha()">ESQUECI MINHA SENHA</b>
+        <hr class="divider2">
+
+        <b class="btn" id="nconta" (click)="EsqueciSenha()">
+         REGISTRAR-SE
+        </b>
+        <hr class="divider2">
+        <hr class="divider2">
+
+
+        <div class="socials-buttons">
+          <ion-button class="btn-login" size="small" color="primary">
+            <ion-icon name="logo-facebook"></ion-icon>
+            Entrar
+          </ion-button>
+
+          <a class="separator-text" color="danger"> </a>
+
+          <ion-button class="btn-login" size="small" color="danger">
+            <ion-icon name="logo-google"></ion-icon>
+            Entrar
+          </ion-button>
+        </div>
+       </div>
+    </div>
+  </div>
+</div>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Toast } from '@ionic-native/toast/ngx';
 
 @Component({
   selector: 'app-login',
@@ -7,9 +9,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginPage implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router 
+    ) {}
 
   ngOnInit() {
+  }
+  
+  register() {
+   
+        console.log('ok');
+      }
+  
+
+ 
+
+  signIn() {
+        this.router.navigate(['/tabs']);
+      } 
+ 
+
+  irParaTabs() {
+    this.router.navigate(['/tabs']);
+  }
+
+  EsqueciSenha() {
+    console.log('ok');
   }
 
 }

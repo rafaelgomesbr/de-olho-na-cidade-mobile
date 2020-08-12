@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>descricao</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-content class="color">
+
+
+
+    <ion-row>
+  
+      <ion-col col-10 col-xs-10 col-sm-10>
+        <ion-item id=size>
+          <ion-label color="dark" stacked>Saneamento Basico</ion-label>
+  
+  
+          <ion-input class="label" color="dark" placeholder="Endereço da Solicitaçao"></ion-input>
+        </ion-item>
+      </ion-col>
+  
+  
+      <ion-col col-1 col-xs-1 col-sm-1>
+        <img id="maps-icon" src="assets/icon/maps.png"/>
+      </ion-col>
+   
+     
+    </ion-row>
+  <div id="cam">
+    <img (click)="tiraFoto()" src="assets/icon/cam3.png"/>
+    <div class="title-cam">Tirar foto</div>
+  </div>
+  
+  
+    <ion-card id="descricao">
+      <ion-card-header class="label2">
+        Descreva seu Problema
+      </ion-card-header>
+      
+        <ion-textarea  id="text-area"> </ion-textarea>
+       
+        <ion-card id="anonimo">
+       
+          <ion-item >
+            <ion-label> Enviar Como Anônimo</ion-label>
+            <ion-toggle enable checked="false"></ion-toggle>
+          </ion-item>
+        </ion-card>
+    </ion-card>
+  
+    <!--
+    <ion-card id="anonimo">
+       
+      <ion-item >
+        <ion-label> Enviar Como Anônimo</ion-label>
+        <ion-toggle enable checked="false"></ion-toggle>
+      </ion-item>
+    </ion-card>
+   
+  -->
+  
+  
+    <button id="btn1"  ion-button round color="dark">Enviar Reclamação</button>
+  
+  
+  
+  
+  
+  </ion-content>
+</ion-content>

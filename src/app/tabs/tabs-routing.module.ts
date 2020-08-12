@@ -8,24 +8,33 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'tab1',
-        loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
+        path: 'home',
+        loadChildren: () => import('../home/home.module').then(m => m.HomePageModule)
       },
-      {
-        path: 'login',
-        loadChildren: () => import('../login/login.module').then(m => m.LoginPageModule)
+        {
+        path: 'descricao',
+        loadChildren: () => import('../description/descricao.module').then(m => m.DescricaoPageModule)
+      },
+        {
+        path: 'about',
+        loadChildren: () => import('../about/about.module').then(m => m.AboutPageModule)
       },
   
       {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: '/tabs/home',
+        pathMatch: 'full'
+      },
+      {
+        path: 'about',
+        redirectTo: '/tabs/about',
         pathMatch: 'full'
       }
     ]
   },
   {
-    path: '',
-    redirectTo: '/tabs/login',
+    path: 'descricao',
+    redirectTo: '/tabs/descricao',
     pathMatch: 'full'
   }
 ];
